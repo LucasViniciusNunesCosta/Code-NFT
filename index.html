@@ -9,11 +9,11 @@
 <body>
     <nav class="navigation">
         <img src="assets/img/logo.png" alt="">
-        <ul>
-            <li><a href="Inicio"></a></li>
-            <li><a href="NFT"></a></li>
-            <li><a href="Colecionadores"></a></li>
-            <li><a href="Perguntas"></a></li>
+        <ul class="navigation__list">
+            <li class="navigation__list-item"><a href="">Inicio</a></li>
+            <li class="navigation__list-item"><a href="">NFT</a></li>
+            <li class="navigation__list-item"><a href="">Colecionadores</a></li>
+            <li class="navigation__list-item"><a href="">Perguntas</a></li>
         </ul>
     </nav>
     <header class="header">
@@ -23,15 +23,41 @@
             <a href="" class="header-info__btn">explorar</a>
         </div>
         <div class="header-card">
-            <div class="header-card__img"></div>
-            <div class="header-card__info"></div>
+            <div class="header-card__img">
+                <span class="header-card__rank">TOP 1</span>
+            </div>
+            <div class="header-card__info">
+                <div class="header-card__info-left">
+                    <p class="header-card__title">Apple Muu</p>
+                    <p class="header-card__description">By Steeve Jobs</p>
+                    <span class="header-card__price"><img src="./assets/icon/ETH.png" alt="Etheriun"> 18 ETH</span>
+                </div>
+                <div class="header-card__info-right">
+                    <button class="header-card__btn">Comprar</button>
+                </div>
+            </div>
         </div>
     </header>
     <section class="numeros">
-
+        <div class="numeros-item">
+            <p class="numeros__title">300</p>
+            <p class="numeros__descricao">Coleções</p>
+        </div>
+        <div class="numeros-item">
+            <p class="numeros__title">+100K</p>
+            <p class="numeros__descricao">Usuários</p>
+        </div>
+        <div class="numeros-item">
+            <p class="numeros__title">+30K</p>
+            <p class="numeros__descricao">Negociações</p>
+        </div>
+        <div class="numeros-item">
+            <p class="numeros__title">+1M</p>
+            <p class="numeros__descricao">Visualizações</p>
+        </div>
     </section>
     <section class="nfts">
-        <h2 class="titulo">TOP NFTs</h2>
+        <h2 class="titulo-section">TOP NFTs</h2>
         <div class="nfts__card-container">
             <div class="nfts-card"></div>
             <div class="nfts-card"></div>
@@ -39,13 +65,16 @@
         </div>
     </section>
     <section class="Colecionadores">
-        <h2 class="titulo">Colecionadores</h2>
+        <h2 class="titulo-section">Colecionadores</h2>
     </section>
     <section class="Perguntas">
-        <h2 class="titulo">Perguntas frequentes</h2>
+        <h2 class="titulo-section">Perguntas frequentes</h2>
     </section>
     <footer class="footer">
-
+        <img src="assets/icon/fi_instagram.png" alt="" class="social-media">
+        <img src="assets/icon/fi_facebook.png" alt="" class="social-media">
+        <img src="assets/icon/fi_twitter.png" alt="" class="social-media">
+        <img src="assets/icon/fi_mail.png" alt="" class="social-media">
     </footer>
 </body>
 </html>
