@@ -8,6 +8,17 @@
   --support-03: #ffce52;
   --support-04: #f03d3d;
 }
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/fontes/Inter-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   font-family: arial;
   border: 0;
@@ -22,6 +33,7 @@ body {
 .navigation {
   padding-left: 20vw;
   padding-right: 20vw;
+  padding-top: 2.5rem;
   display: flex;
   justify-content: space-between;
   background-color: #030303;
@@ -34,19 +46,19 @@ body {
 .navigation__list-item > a {
   text-decoration: none;
   color: var(--branco-primario);
-  font-size: 20px;
+  font-size: 18px;
   font-family: Inter;
   font-style: normal;
   font-weight: 500;
 }
 .header {
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding: 10vh 20vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--dark-10);
 }
-.header-info{
+.header-info {
   width: 30vw;
 }
 .header-info__title {
@@ -54,6 +66,7 @@ body {
   font-size: 56px;
   font-family: Inter;
   font-weight: 700;
+  margin-bottom: 24px;
 }
 .header-info__title > b {
   color: var(--brand-color);
@@ -64,11 +77,63 @@ body {
   font-family: Inter;
   font-weight: 400;
   line-height: 160%;
+  margin-bottom: 48px;
 }
-.header-info__btn{
+.header-info__btn {
   text-decoration: none;
   background-color: var(--brand-color);
   color: var(--dark-10);
   padding: 16px 64px;
   border-radius: 6px;
+  font-size: 20px;
+}
+.header-card {
+  border-radius: 0px 0px 6px 6px;
+  opacity: 0.6000000238418579;
+  background: linear-gradient(
+    139deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.06) 100%
+  );
+  backdrop-filter: blur(5px);
+  width: 25vw;
+  padding: 32px;
+}
+.header-card__img{
+  height: 30vh;
+  background-image: url(assets/img/banner-header.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header-card__rank {
+  border-radius: 4px;
+  background: linear-gradient(
+    139deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.06) 100%
+  );
+  backdrop-filter: blur(5px);
+  color: var(--branco-primario);
+  padding: 6px 24px;
+}
+.header-card__info {
+  display: flex;
+  justify-content: space-between;
+  color: var(--branco-primario);
+}
+.header-card__price{
+  display: flex;
+  align-items: center;
+}
+.header-card__btn {
+  padding: 1rem 2rem;
+  background-color: var(--brand-color);
+  border-radius: 6px;
+  text-align: center;
+  font-size: 18px;
+  font-family: Inter;
+  font-weight: 600;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
 }
