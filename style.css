@@ -9,8 +9,8 @@
   --support-04: #f03d3d;
 }
 @font-face {
-  font-family: 'Inter';
-  src: url('assets/fontes/Inter-Regular.ttf');
+  font-family: "Inter";
+  src: url("assets/fontes/Inter-Regular.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -23,6 +23,7 @@ body {
   font-family: arial;
   border: 0;
   margin: 0;
+  background-color: #030303;
 }
 .titulo-section {
   color: var(--branco-primario);
@@ -99,7 +100,7 @@ body {
   width: 25vw;
   padding: 32px;
 }
-.header-card__img{
+.header-card__img {
   height: 30vh;
   background-image: url(assets/img/banner-header.png);
   background-size: contain;
@@ -122,7 +123,7 @@ body {
   justify-content: space-between;
   color: var(--branco-primario);
 }
-.header-card__price{
+.header-card__price {
   display: flex;
   align-items: center;
 }
@@ -136,4 +137,34 @@ body {
   font-weight: 600;
   letter-spacing: 1.44px;
   text-transform: uppercase;
+}
+.numeros {
+  margin: 10vh 20vw;
+  height: 30vh;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.numeros-item {
+  text-align: center;
+  color: var(--branco-primario);
+  padding: 55px 10px;
+}
+.numeros>hr{
+  height: 70%;
+  width: 2px;
+  background-image: linear-gradient(138deg, rgba(224, 37, 206, 0.70) 0%, rgba(74, 237, 82, 0.70) 50.52%, rgba(189, 36, 230, 0.70) 100%);
+  border: none;
+}
+.numeros__title {
+  font-size: 50px;
+  font-weight: 700;
+}
+.numeros__descricao {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: inter;
 }
