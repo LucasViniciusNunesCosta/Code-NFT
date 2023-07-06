@@ -147,16 +147,27 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  border-image: linear-gradient(
+    138deg,
+    rgba(224, 37, 206, 0.7) 0%,
+    rgba(74, 237, 82, 0.7) 50.52%,
+    rgba(189, 36, 230, 0.7) 100%
+  );
 }
 .numeros-item {
   text-align: center;
   color: var(--branco-primario);
   padding: 55px 10px;
 }
-.numeros>hr{
+.numeros > hr {
   height: 70%;
   width: 2px;
-  background-image: linear-gradient(138deg, rgba(224, 37, 206, 0.70) 0%, rgba(74, 237, 82, 0.70) 50.52%, rgba(189, 36, 230, 0.70) 100%);
+  background-image: linear-gradient(
+    138deg,
+    rgba(224, 37, 206, 0.7) 0%,
+    rgba(74, 237, 82, 0.7) 50.52%,
+    rgba(189, 36, 230, 0.7) 100%
+  );
   border: none;
 }
 .numeros__title {
@@ -167,4 +178,27 @@ body {
   font-size: 20px;
   font-weight: 600;
   font-family: inter;
+}
+.nfts {
+  margin: 10vh 20vw;
+  text-align: center;
+}
+.nfts__card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+.nfts-card {
+  width: 32%;
+  height: 450px;
+  border-radius: 8px;
+}
+.nfts-card:nth-child(1){
+  background-image: url(assets/img/NFT1.png);
+}
+.nfts-card:nth-child(2){
+  background-image: url(assets/img/NFT2.png); 
+}
+.nfts-card:nth-child(3){
+  background-image: url(assets/img/NFT3.png);
 }
