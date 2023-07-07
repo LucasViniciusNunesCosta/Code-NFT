@@ -203,8 +203,8 @@ body {
   background-image: url(assets/img/NFT3.png);
 }
 .footer {
-  margin: 10vh 20vw;
-  padding: 50px 0px;
+  margin: 10vh 20vw 5vh 20vw;
+  padding: 30px 0px 5px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -213,15 +213,10 @@ body {
 .container__social-media {
   height: 80px;
   width: 80px;
-  border: 1px solid red;
+  border: 1px solid var(--brand-color);
   border-radius: 16px;
   padding: 1rem;
-  border-image: linear-gradient(
-    138deg,
-    rgba(224, 37, 206, 0.7) 0%,
-    rgba(74, 237, 82, 0.7) 50.52%,
-    rgba(189, 36, 230, 0.7) 100%
-  );
+  border-image-slice: 1;
   overflow: hidden;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(50px);
@@ -233,4 +228,68 @@ body {
   width: 100%;
   height: auto;
   display: block;
+}
+.colecionadores {
+  margin: 10vh 20vw;
+}
+.colecionadores-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.colecionadores__ver-todos {
+  text-decoration: none;
+  background-color: var(--brand-color);
+  color: var(--dark-10);
+  padding: 12px 32px;
+  border-radius: 6px;
+  font-size: 14px;
+  letter-spacing: 1.12px;
+  text-transform: uppercase;
+  font-family: inter;
+  font-weight: 600;
+}
+.colecionadores__table {
+  color: var(--branco-primario);
+  border: none;
+  width: 100%;
+}
+.colecionadores__table-cabecalho-line {
+  height: 2px;
+  background-image: linear-gradient(
+    138deg,
+    rgba(224, 37, 206, 0.7) 0%,
+    rgba(74, 237, 82, 0.7) 50.52%,
+    rgba(189, 36, 230, 0.7) 100%
+  );
+  border: none;
+}
+.colecionadores__table-item,
+.colecionadores__table-cabecalho {
+  text-align: start;
+}
+.colecionadores__table-cabecalho {
+  font-family: Inter;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.colecionadores__table-item {
+  margin: 30px 0px;
+}
+.colecionador-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.colecionador-volume {
+  text-align: end;
+}
+.colecionador-piso {
+  text-align: end;
+}
+.colecionador-itens {
+  text-align: end;
+}
+.colecionadores-porcent {
+  color: var(--brand-color);
 }
