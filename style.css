@@ -193,12 +193,44 @@ body {
   height: 450px;
   border-radius: 8px;
 }
-.nfts-card:nth-child(1){
+.nfts-card:nth-child(1) {
   background-image: url(assets/img/NFT1.png);
 }
-.nfts-card:nth-child(2){
-  background-image: url(assets/img/NFT2.png); 
+.nfts-card:nth-child(2) {
+  background-image: url(assets/img/NFT2.png);
 }
-.nfts-card:nth-child(3){
+.nfts-card:nth-child(3) {
   background-image: url(assets/img/NFT3.png);
+}
+.footer {
+  margin: 10vh 20vw;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.container__social-media {
+  height: 80px;
+  width: 80px;
+  border: 1px solid red;
+  border-radius: 16px;
+  padding: 1rem;
+  border-image: linear-gradient(
+    138deg,
+    rgba(224, 37, 206, 0.7) 0%,
+    rgba(74, 237, 82, 0.7) 50.52%,
+    rgba(189, 36, 230, 0.7) 100%
+  );
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer > img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
