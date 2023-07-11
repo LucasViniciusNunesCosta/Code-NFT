@@ -313,7 +313,7 @@ body {
   font-weight: 400;
   margin-bottom: 20px;
 }
-@media screen and (min-width: 769px) and (max-width: 1280px) {
+@media screen and (min-width: 768px) and (max-width: 1280px) {
   .navigation,
   .header,
   .numeros,
@@ -331,11 +331,68 @@ body {
     height: 100%;
     padding: 10px;
   }
-  .header-card__info-right{
-
-  }
   .header-card__btn{
     padding: 1rem;
     font-size: 12px;
+  }
+  .nfts-card{
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .navigation,
+  .header,
+  .numeros,
+  .nfts,
+  .footer,
+  .colecionadores,
+  .Perguntas {
+    margin: 10vh 5vw;
+  }
+  .navigation{
+    padding-top: .5rem;
+  }
+  .header{
+    flex-direction: column;
+  }
+  .header-info{
+    width: 100%;
+  }
+  .header-card{
+    width: 100%;
+    display: none;
+  }
+  .numeros{
+    flex-direction: column;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .numeros-item {
+    padding: 20px 0px;
+  }
+  .nfts__card-container{
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  .nfts-card{
+    width: 90%;
+  }
+  .colecionadores-top{
+    margin-bottom: 1.5rem;
+  }
+  .colecionadores-top> .titulo-section{
+    font-size: 2rem;
+  }
+  .colecionadores__ver-todos{
+    padding: 12px 20px;
+  }
+  .colecionadores__table-cabecalho{
+    font-size: 1.2rem;
+  }
+  .container__social-media{
+    padding: 0;
   }
 }
